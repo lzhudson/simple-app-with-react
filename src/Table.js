@@ -17,7 +17,7 @@ const TableBody = (props) => {
       <tr key={index}>
         <td>{row.name}</td>
         <td>{row.job}</td>
-        <td onClick={()=> {props.removerCharacter(index)}} >Delete</td>
+        <td><button onClick={() => { props.removerCharacter(index) }} >Delete</button></td>
       </tr>
     )
   })
